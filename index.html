@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Base de Dados</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+
+<!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Conversor de Base de Dados</h1>
+    </header>
+    <main class="calculadora">
+        <div class="calculadora__converter">
+            <label for="valor" class="calculadora__converter__titulo">Insira o valor a ser convertido:</label>
+            <input type="text" id="valor" class="calculadora__converter__input">
+            
+            <label for="base" class="calculadora__converter__titulo">Informe a base atual do valor informado:</label>
+            <input type="text" id="base" class="calculadora__converter__input">
+            
+
+        </div>
+
+        <div class="calculadora__convertido">
+            <h2 class="calculadora__convertido__texto">Valor convertido para</h2>
+
+            <div class="container__conversao">
+                <div class="container__convertido">
+                    <label for="convertido_2">Base 2:</label>
+                    <input type="text" id="convertido_2" readonly>    
+                </div>
+    
+                <div class="container__convertido">
+                    <label for="convertido_5">Base 5:</label>
+                    <input type="text" id="convertido_5" readonly>    
+                </div>
+                
+                <div class="container__convertido">
+                    <label for="convertido_8">Base 8:</label>
+                    <input type="text" id="convertido_8" readonly>    
+                </div>
+    
+                <div class="container__convertido">
+                    <label for="convertido_10">Base 10:</label>
+                    <input type="text" id="convertido_10" readonly>    
+                </div>
+    
+                <div class="container__convertido container__convertido-16">
+                    <label for="convertido_16">Base 16:</label>
+                    <input type="text" id="convertido_16" readonly>    
+                </div>
+                
+            </div>
+        </div>
+
+            
+
+        <div class="calculadora__botao">
+            <button class="calculadora__botao_calcular" onclick="calcularConversao()" id="botao">Converter</button>
+        </div>
+    </main>
+</body>
+
+<script src="./index3.js"></script>
+</html>
